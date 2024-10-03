@@ -7,14 +7,14 @@ En este reporsitorio, se agrupan las funciones y actividades informaticas realiz
 
 Con el siguiente codigo, puede usted  cargar las funciones relativas a los calculos de interes simple:
 
-```{r}
+```
 source("https://raw.githubusercontent.com/broref/Tarea_funciones_interes_simple/refs/heads/main/Funciones.R")
 ```
 
 A continuacion se dan ejemplos del uso de las formulas correspondientes
 
 
-### Calculo del Valor Futuro.
+### Calculo del Valor Final.
 
 Para ilustrar el ejemplo, se tiene el siguiente ejercicio:
 $VA$=$10,000.00
@@ -23,7 +23,7 @@ $r$=2.00% mensual
 $t$=7 meses
 
 Se realizan los calculos
-```{r}
+```
 # Creamos objetos con los valores de entrada:
 valorActual=1000
 tasaPeriodo=0.02
@@ -33,9 +33,8 @@ valorfuturo=valorFinalSimple(VA=valorActual,r=tasaPeriodo,t=nPeriodos)
 #Imprimos el resultado:
 valorfuturo = 1140
 ```
-### Calculo del Valor Actual
+### Calculo del Valor Final
 
-Para ilustrar el uso de esta formula, utilizaremos los valores del mismo ejemplo que se uso con aterioridad, para verificar que este correcto.
 $VA$=$10,000.00
 $i$=24.00% anualizado.
 $r$=2.00% mensual
@@ -43,8 +42,39 @@ $t$=7 meses
 
 ### Calculo del Valor Actual
 
-Para ilustrar el uso de esta formula, utilizaremos los valores del mismo ejemplo que se uso con aterioridad, para verificar que este correcto.
-$VA$=$10,000.00
+$VF$=$10,000.00
 $i$=24.00% anualizado.
 $r$=2.00% mensual
 $t$=7 meses
+
+### Calculo de tasa de interes
+
+$VF$=$10,000.00
+$VA$=$10,000.00
+$t$=7 meses
+
+### Calculo de tiempo
+
+$VF$=$10,000.00
+$VA$=$10,000.00
+$i$=24.00% anualizado.
+$r$=2.00% mensual
+
+## Para simplificar y acceder a los calculos de las funciones mas facilmente se pueden utilizar los siguientes comandos
+
+# Calculo de valor final
+```
+VF=valorFinal(VA=1000,r=0.02,t=7)
+```
+# Calculo de valor actual
+```
+VA=valorActual(VF=1140,r=0.02,t=7)
+```
+# Calculo de tasa de interes
+```
+r=tasaInteres(VF=1140,VA=1000,t=7)
+```
+# Calculo de tiempo
+```
+t=tiempo(VF=1140,VA=1000,r=0.02)
+```
