@@ -8,7 +8,7 @@ En este reporsitorio, se agrupan las funciones y actividades informaticas realiz
 Con el siguiente codigo, puede usted  cargar las funciones relativas a los calculos de interes simple:
 
 ```{r}
-source("https://raw.githubusercontent.com/yaxirilopez7/MatematicasFinancieras2024/refs/heads/main/formulaInteresSimple.R")
+source("https://raw.githubusercontent.com/broref/Tarea_funciones_interes_simple/refs/heads/main/Funciones.R")
 ```
 
 A continuacion se dan ejemplos del uso de las formulas correspondientes
@@ -36,12 +36,15 @@ valorfuturo = 1140
 ### Calculo del Valor Actual
 
 Para ilustrar el uso de esta formula, utilizaremos los valores del mismo ejemplo que se uso con aterioridad, para verificar que este correcto.
+$VA$=$10,000.00
 $i$=24.00% anualizado.
 $r$=2.00% mensual
 $t$=7 meses
 
-Se realizan los calculos para la obtencion del resultado
-```{r}
-# Creamos objetos con los valores de entrada:
-tasaPeriodo=0.02
-nPeriodos=7
+### Calculo del Valor Actual
+
+Para ilustrar el uso de esta formula, utilizaremos los valores del mismo ejemplo que se uso con aterioridad, para verificar que este correcto.
+$VA$=$10,000.00
+$i$=24.00% anualizado.
+$r$=2.00% mensual
+$t$=7 meses
